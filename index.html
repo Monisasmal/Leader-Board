@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leader Board</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>🏆 Leader Board 🏆</h1>
+    <div class="main">
+      <div class="left-container">
+        <form action="" class="form" id="name">
+          <input type="text" class="fname" placeholder="FIRST NAME" id="">
+          <input type="text" class="lname" placeholder="LAST NAME" id="">
+          <select name="" class="country" id="">
+            <option value="" disabled selected>-- Please choose an option --</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="England">England</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+          </select>
+          <input type="number" class="score" placeholder="Score" id="">
+          <button class="btn" id="">Add Player</button>
+        </form>
+      </div>
+      <div class="right-container">
+        <div class="heading">
+        <h2>😊Recent Score😊</h2>
+        <button class="btn" id="refresh" style="background: linear-gradient(45deg, #c0b413, #9e890f);">Clear
+          All</button>
+        </div>
+        <hr>
+        <div class="items">
+          <span>FNAME</span>
+          <span>LNAME</span>
+          <span>COUNTRY</span>
+          <span>SCORE</span>
+          <span>ADD</span>
+          <span>SUB</span>
+          <span>DEL</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>

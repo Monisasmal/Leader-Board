@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  background: url(https://mahdisohaily.github.io/Leaderboard/images/pattern-hills.svg), url(https://mahdisohaily.github.io/Leaderboard/images/bg-stars.svg), hsl(235deg 20.15% 21.09%);
+  ;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 40px;
+  /* display: flex; */
+}
+.container h1{
+  text-align: center;
+  font-size: 4rem;
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading .btn{
+  width: 15%;
+  margin-bottom: 1rem;
+}
+.main{
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+}
+.left-container{
+  width: 25%;
+  align-items: center;
+   padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-left: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 480px;
+}
+.form input,select{
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+ .btn{
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border-style: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  cursor: pointer;
+}
+.btn:hover{
+  background: hsl(232, 37%, 12%);
+  color: white;
+}
+.right-container{
+  width: 70%;
+  margin: 0rem 1rem;
+  padding: 20PX 20PX;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.1);
+}
+.right-container h2{
+  text-align: center;
+   margin-bottom: 0rem;
+   font-size: 26px;
+   text-transform: uppercase;
+}
+.right-container hr{
+  background-color: hsl(345, 95%, 68%);
+  height: .1rem;
+  border-style: none;
+  width: 100%;
+  display: inline-block ;
+  margin-bottom: 2rem;
+}
+ .items, .btn-group{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  /* flex: 1; */
+  
+}
+.items span, .btn-group span, .btn-group button {
+  flex: 1;
+  text-align: center;
+  margin:  5px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.but1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 0px;
+  border: none;
+  border-radius: 5px;
+}
+.but2 {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 0px;
+  border: none;
+  border-radius: 5px;
+}
+.del {
+  background: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+.del img {
+  width: 20px;
+  height: 20px;
+}
+
+@media(max-width:768px){
+  .container h1{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left-container{
+    width: 100%;
+    margin-bottom: 20px;
+    /* align-items: center; */
+    justify-content: center;
+    margin-left: 0;
+  }
+  .right-container{
+    width: 100%;
+    margin: 0;
+  }
+   .items{
+    display: flex;
+    overflow-x: scroll;
+  }
+  .btn-group{
+    overflow-x: scroll;
+  }
+  .right-container h2{
+    font-size: 16px;
+  }
+  .but1, .but2, .del{
+    padding: 5px 10px;
+  }
+  .heading .btn{
+    width: 25%;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    display: flex;
+    font-size: 10px;
+  }
+}
