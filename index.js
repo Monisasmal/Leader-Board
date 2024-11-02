@@ -10,7 +10,7 @@ let pcountry = document.querySelector(".country");
 let pscore = document.querySelector(".score");
 let button = document.querySelector("button");
 let rightContainer = document.querySelector(".right-container");
-let refreshAll = document.getElementById("refresh");
+
 
 
 // fill all value with out miss anyone
@@ -79,6 +79,14 @@ function updateDataOnUI(){
         `;
   });
       rightContainer.innerHTML = showData;
+
+  // To clear all the data at a time using clear ALL btn
+  const clearAll = document.getElementById("refresh");
+  clearAll.addEventListener("click", function() {
+    data = [];
+    updateDataOnUI();
+  })
+  
         activateButton();
 
 }
