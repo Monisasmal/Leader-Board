@@ -49,9 +49,10 @@ cd Leader-Board
 
 **Open the index.html file in your browser**
 
+
 🙋‍♀️ Author
 
-
+Manaswini Sasmal
 
 👩‍💻 Frontend Developer | React Enthusiast
 
